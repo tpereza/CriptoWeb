@@ -1,0 +1,20 @@
+mutation addMultimedia ($image: Upload!, $idUsuario:String!, $descripcion:String!, $idEtiquetas:[String]!){
+  addMultimedia(multimedia: {
+    idUsuario: $idUsuario
+    descripcion: $descripcion
+    idEtiquetas: $idEtiquetas
+    file: $image
+  }){
+    id
+    descripcion
+    url
+    formato
+    tamano
+    id_bucket
+    usuario_creador_id
+    etiquetas_relacionadas_ids
+    tableros_agregados_ids
+    created_at
+    updated_at
+  }
+}

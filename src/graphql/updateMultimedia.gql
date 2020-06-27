@@ -1,0 +1,21 @@
+mutation updateMultimedia ($id: String!, $descripcion: String, $idEtiquetas: [String]){
+  updateMultimedia (multimedia: {
+    id: $id
+    descripcion: $descripcion
+    idEtiquetas: $idEtiquetas
+  }){
+    id
+    descripcion
+    url
+    formato
+    id_bucket
+    usuario_creador_id
+    etiquetas_relacionadas_ids
+    tableros_agregados_ids
+    created_at
+    updated_at
+  }
+}
+
+
+

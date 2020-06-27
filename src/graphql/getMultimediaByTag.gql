@@ -1,0 +1,8 @@
+query getMultimediaByTag($tagId: String!) {
+  getMultimediaByTag(id: $tagId) {
+    url
+    id
+    usuario_creador_id
+    descripcion
+  }
+}

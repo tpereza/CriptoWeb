@@ -1,0 +1,8 @@
+query getUsersFeed($userId: String!) {
+  getUsersFeed(idUsuario: $userId) {
+    url
+    id
+    usuario_creador_id
+    descripcion
+  }
+}

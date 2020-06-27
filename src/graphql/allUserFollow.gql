@@ -1,0 +1,11 @@
+query allUserFollow {
+  allUserFollow {
+    id
+    userFollower {
+      id
+    }
+    userFollowing {
+      id
+    }
+  }
+}

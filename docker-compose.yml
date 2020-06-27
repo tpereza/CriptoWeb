@@ -1,0 +1,6 @@
+version: '3'
+services:
+  pinart-wa:
+    build: .
+    ports:
+      - "80:8080"

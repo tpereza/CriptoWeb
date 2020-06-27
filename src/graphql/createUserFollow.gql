@@ -1,0 +1,7 @@
+mutation createUserFollow($userFollower: Int!, $userFollowing: Int!) {
+  createUserFollow(
+    userfollow: { userFollower_id: $userFollower, userFollowing_id: $userFollowing }
+  ) {
+    id
+  }
+}

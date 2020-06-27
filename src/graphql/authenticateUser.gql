@@ -1,0 +1,15 @@
+mutation authenticateUser($username: String!, $password: String!, $dispositivo: String){
+  authenticateUser(
+    auth:{
+      username: $username
+      password: $password
+      dispositivo: $dispositivo
+    }
+  ){
+    id
+    username
+    firstName
+    lastName
+    token
+  }
+}

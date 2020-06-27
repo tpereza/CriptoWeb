@@ -1,0 +1,5 @@
+query usersFollowingByFollower($userId: Int!) {
+  usersFollowingByFollower(follower_id: $userId) {
+    id
+  }
+}

@@ -1,0 +1,151 @@
+@import './var.scss';
+@import './mixins.scss';
+
+.user__header-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 32px 10%;
+  .user__header-left {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    flex: 2;
+    h1 {
+      flex: 1;
+      text-align: center;
+      margin-bottom: 5px;
+      font-size: 30px;
+    }
+    .user__follow,{
+      display: flex;
+      justify-content: center;
+      >div {
+        margin-left: 15%;
+      }
+    }
+    p {
+      margin-bottom: 0;
+    }
+    h6 {
+      color: $primary-color;
+    }
+  }
+
+}
+.user__profile-content {
+  margin: 32px;
+}
+.user__pins {
+  display: flex;
+  flex-wrap: wrap;
+  .card {
+    display: inline-block;
+    margin: 10px;
+    .card__content {
+      margin-bottom: 5px;
+      border-radius: 6px;
+      width: 236px;
+      height: 236px;
+      overflow: hidden;
+      img {
+        min-width: 100%;
+        min-height: 100%;
+      }
+    }
+  }
+  .card--create {
+    .card__content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .card__create-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #fff;
+      .svg__icon {
+        fill: #52c1b4;
+      }
+    }
+    .card__content {
+      background-color: $primary-color-light;
+    }
+    h5 {
+      color: $primary-color;
+    }
+  }
+}
+body {
+  background: #F5F7FA
+}
+.stat-val {
+  font-size: 3em;
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+.stat-key {
+  font-size: 1.4em;
+  font-weight: 200
+}
+
+.section.profile-heading .column.is-2-tablet.has-text-centered + .has-text-centered {
+  border-left: 1px dotted rgba(0, 0, 0, .2);
+}
+
+.container.profile {
+  margin-top: 1%;
+}
+
+.control.is-pulled-left span.select {
+  margin-right: 5px;
+  border-radius: 2px;
+}
+
+.modal-card .content h1 {
+  padding: 40px 10px 10px;
+  border-bottom: 1px solid #dadada
+}
+
+.container.profile .profile-options .tabs ul li.link a {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #F1F1F1;
+}
+
+.user__header {
+  object-fit: cover;
+  width: 14vw;
+  height: 14vw;
+  border-radius: 50%;
+  -webkit-box-shadow: -56px 56px 35px -67px rgba(191,219,216,1);
+  -moz-box-shadow: -56px 56px 35px -67px rgba(191,219,216,1);
+  box-shadow: -56px 56px 35px -67px rgba(191,219,216,1);
+
+}
+
+.user__avatar {
+  object-fit: cover;
+  width: 14vw;
+  height: 14vw;
+  background-size: 18vw 18vw;
+  background-position-y: center;
+  background-position-x: center;
+  background-image: url("../profile.svg");
+
+}
+
+
+.card-img, .card-img-top {
+  border-top-left-radius: calc(.25rem - 1px);
+  border-top-right-radius: calc(.25rem - 1px);
+  width: 9vw;
+  height: 12vw;
+  object-fit: cover;
+}
+
+.card-deck {
+  margin-top: 15px;
+}

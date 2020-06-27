@@ -1,0 +1,12 @@
+mutation updateProfile ($userId: Int!, $countryId:Int, $fechaNacimiento: String,  $genero:String, $foto:String ,  $descripcion:String ) {
+  updateProfile (profile:{
+    userId: $userId,
+    countryId: $countryId,
+    fechaNacimiento:  $fechaNacimiento,
+    genero: $genero,
+    foto: $foto,
+    descripcion: $descripcion
+  },
+  id: 0
+  )
+}

@@ -1,0 +1,3 @@
+mutation deleteMultimedia  ($idMultimedia: String!) {
+    deleteMultimedia (idMultimedia:$idMultimedia)
+}

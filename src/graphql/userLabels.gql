@@ -1,0 +1,8 @@
+query userLabels($userId: Int!) {
+  userLabels(userId: $userId) {
+    relatedLabels {
+      name
+      description
+    }
+  }
+}

@@ -1,0 +1,8 @@
+query getTagsFeed($userId: String!) {
+  getTagsFeed(idUsuario: $userId) {
+    url
+    id
+    usuario_creador_id
+    descripcion
+  }
+}
